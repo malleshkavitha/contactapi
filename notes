@@ -1,0 +1,41 @@
+Docker Commands
+--------------------------
+    docker --version      : to check the version of Docker
+    docker images        : to check the docker images present in my system
+
+tags – typically used for versioning
+
+docker image by name hello-world typically used for test whether docker is working or not.
+
+
+    docker images                   : listing images
+
+    docker rmi <image name/id>      : removing images
+
+    docker pull <image name>   : to pull images for dockerHub
+
+    docker pull <image name>:tagname   : to pull images with tag name
+
+    docker run <image name>  : start container(to run image) and run pgms
+
+    docker ps -a                    : List all containers
+
+    docker ps                       : list running containers
+
+    docker rm <containerid/name>    : removing stopped containers
+
+    docker container prune          : remove all stopped containers
+
+    docker stop <containerid/name>  : stop a running container
+
+    docker network create <networkname>  : create own bridge network
+
+    docker network ls                  : list networks
+
+    docker logs <containerid/name>      : see the container logs
+    docker logs -f <containerid/name>   : follow the new logs
+
+
+    docker exec -it 17b6d663cf82 bash   : get inside the container in a terminal
+
+  docker info : will give info about docker,root directory……
